@@ -1,0 +1,20 @@
+{
+  "runId": "wrun_01KH9VMMJF1FK4TXFV13ZW5CY9",
+  "stepId": "step_01KH9VMMMCVQ3CGZNW1J047G5K",
+  "stepName": "step//./src/worfklows/pr-review//generateReview",
+  "status": "failed",
+  "input": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bFt7ImFyZ3MiOjEsImNsb3N1cmVWYXJzIjotMSwidGhpc1ZhbCI6LTF9LFsyXSwiIl0="
+  },
+  "error": {
+    "message": "Step \"step//./src/worfklows/pr-review//generateReview\" failed after 3 retries: models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "stack": "AI_APICallError: models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\n    at file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/@ai-sdk+provider-utils@4.0.14_zod@4.1.11/node_modules/@ai-sdk/provider-utils/dist/index.mjs:2379:14\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async postToApi (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/@ai-sdk+provider-utils@4.0.14_zod@4.1.11/node_modules/@ai-sdk/provider-utils/dist/index.mjs:2222:28)\n    at async GoogleGenerativeAILanguageModel.doGenerate (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/@ai-sdk+google@3.0.26_zod@4.1.11/node_modules/@ai-sdk/google/dist/index.mjs:1023:9)\n    at async fn (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:4095:36)\n    at async file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:2227:24\n    at async _retryWithExponentialBackoff (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:2486:12)\n    at async fn (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:4049:36)\n    at async file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:2227:24\n    at async generateText (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:3917:12)"
+  },
+  "attempt": 4,
+  "startedAt": "2026-02-12T21:20:46.638Z",
+  "createdAt": "2026-02-12T21:20:46.589Z",
+  "updatedAt": "2026-02-12T21:20:50.330Z",
+  "specVersion": 2,
+  "completedAt": "2026-02-12T21:20:50.330Z"
+}

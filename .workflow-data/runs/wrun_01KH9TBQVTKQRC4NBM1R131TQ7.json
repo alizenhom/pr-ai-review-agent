@@ -1,0 +1,23 @@
+{
+  "runId": "wrun_01KH9TBQVTKQRC4NBM1R131TQ7",
+  "deploymentId": "dpl_local@4.1.0-beta.31",
+  "workflowName": "workflow//./src/worfklows/pr-review//prReviewWorkflow",
+  "specVersion": 2,
+  "executionContext": {
+    "traceCarrier": {},
+    "workflowCoreVersion": "4.1.0-beta.55"
+  },
+  "input": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bFtbMV0seyJyZXBvIjoyLCJvd25lciI6MywicHJOdW1iZXIiOjR9LCJwci1haS1yZXZpZXctYWdlbnQiLCJhbGl6ZW5ob20iLDFd"
+  },
+  "createdAt": "2026-02-12T20:58:25.535Z",
+  "startedAt": "2026-02-12T20:58:25.591Z",
+  "status": "completed",
+  "output": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bC0x"
+  },
+  "completedAt": "2026-02-12T20:58:25.619Z",
+  "updatedAt": "2026-02-12T20:58:25.619Z"
+}

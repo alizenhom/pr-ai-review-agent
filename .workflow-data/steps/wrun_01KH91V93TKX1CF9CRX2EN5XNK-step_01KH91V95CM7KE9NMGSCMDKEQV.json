@@ -1,0 +1,20 @@
+{
+  "runId": "wrun_01KH91V93TKX1CF9CRX2EN5XNK",
+  "stepId": "step_01KH91V95CM7KE9NMGSCMDKEQV",
+  "stepName": "step//./src/worfklows/hello//buildGreeting",
+  "status": "completed",
+  "input": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bFt7ImFyZ3MiOjEsImNsb3N1cmVWYXJzIjotMSwidGhpc1ZhbCI6LTF9LFsyXSwiaGVsbG9AZXhhbXBsZS5jb20iXQ=="
+  },
+  "attempt": 1,
+  "startedAt": "2026-02-12T13:50:00.442Z",
+  "createdAt": "2026-02-12T13:50:00.394Z",
+  "updatedAt": "2026-02-12T13:50:00.444Z",
+  "specVersion": 2,
+  "output": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bFsiSGVsbG8sIGhlbGxvQGV4YW1wbGUuY29tISJd"
+  },
+  "completedAt": "2026-02-12T13:50:00.444Z"
+}

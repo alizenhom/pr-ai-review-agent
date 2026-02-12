@@ -1,0 +1,14 @@
+{
+  "eventType": "step_completed",
+  "specVersion": 2,
+  "correlationId": "step_01KH9VZHT9YESHS2XW70C7G6MK",
+  "eventData": {
+    "result": {
+      "__type": "Uint8Array",
+      "data": "ZGV2bFsiIl0="
+    }
+  },
+  "runId": "wrun_01KH9VZHR8X9K9DMMY561FXHVD",
+  "eventId": "evnt_01KH9VZJEAXT5QG7AX68G7BWQD",
+  "createdAt": "2026-02-12T21:26:43.914Z"
+}

@@ -1,0 +1,15 @@
+{
+  "eventType": "step_created",
+  "specVersion": 2,
+  "correlationId": "step_01KH9VZHT9YESHS2XW70C7G6MM",
+  "eventData": {
+    "stepName": "step//./src/worfklows/pr-review//generateReview",
+    "input": {
+      "__type": "Uint8Array",
+      "data": "ZGV2bFt7ImFyZ3MiOjEsImNsb3N1cmVWYXJzIjotMSwidGhpc1ZhbCI6LTF9LFsyXSwiIl0="
+    }
+  },
+  "runId": "wrun_01KH9VZHR8X9K9DMMY561FXHVD",
+  "eventId": "evnt_01KH9VZJGGCSDQNHQ2JJGRT052",
+  "createdAt": "2026-02-12T21:26:43.984Z"
+}

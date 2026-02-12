@@ -1,0 +1,12 @@
+{
+  "eventType": "step_retrying",
+  "specVersion": 2,
+  "correlationId": "step_01KH9VMMMCVQ3CGZNW1J047G5K",
+  "eventData": {
+    "error": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "stack": "AI_APICallError: models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\n    at file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/@ai-sdk+provider-utils@4.0.14_zod@4.1.11/node_modules/@ai-sdk/provider-utils/dist/index.mjs:2379:14\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async postToApi (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/@ai-sdk+provider-utils@4.0.14_zod@4.1.11/node_modules/@ai-sdk/provider-utils/dist/index.mjs:2222:28)\n    at async GoogleGenerativeAILanguageModel.doGenerate (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/@ai-sdk+google@3.0.26_zod@4.1.11/node_modules/@ai-sdk/google/dist/index.mjs:1023:9)\n    at async fn (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:4095:36)\n    at async file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:2227:24\n    at async _retryWithExponentialBackoff (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:2486:12)\n    at async fn (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:4049:36)\n    at async file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:2227:24\n    at async generateText (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:3917:12)"
+  },
+  "runId": "wrun_01KH9VMMJF1FK4TXFV13ZW5CY9",
+  "eventId": "evnt_01KH9VMNTPP6T4T9S8SH91VKW0",
+  "createdAt": "2026-02-12T21:20:46.934Z"
+}

@@ -1,0 +1,15 @@
+{
+  "eventType": "step_created",
+  "specVersion": 2,
+  "correlationId": "step_01KH9V05FWHXVNFSC64T8SY16N",
+  "eventData": {
+    "stepName": "step//./src/worfklows/pr-review//fetchPRDiff",
+    "input": {
+      "__type": "Uint8Array",
+      "data": "ZGV2bFt7ImFyZ3MiOjEsImNsb3N1cmVWYXJzIjotMSwidGhpc1ZhbCI6LTF9LFsyXSx7InJlcG8iOjMsIm93bmVyIjo0LCJwck51bWJlciI6NX0sInByLWFpLXJldmlldy1hZ2VudCIsImFsaXplbmhvbSIsMV0="
+    }
+  },
+  "runId": "wrun_01KH9V05DYQNGDNFM2M684Q9AJ",
+  "eventId": "evnt_01KH9V05GSWZJYC42HQGVBQ2CG",
+  "createdAt": "2026-02-12T21:09:34.873Z"
+}

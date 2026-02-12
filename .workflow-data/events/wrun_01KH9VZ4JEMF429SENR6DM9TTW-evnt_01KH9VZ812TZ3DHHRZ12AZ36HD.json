@@ -1,0 +1,12 @@
+{
+  "eventType": "step_retrying",
+  "specVersion": 2,
+  "correlationId": "step_01KH9VZ55X6RZEPGHC3RTQ7STN",
+  "eventData": {
+    "error": "Groq API key is missing. Pass it using the 'apiKey' parameter or the GROQ_API_KEY environment variable.",
+    "stack": "AI_LoadAPIKeyError: Groq API key is missing. Pass it using the 'apiKey' parameter or the GROQ_API_KEY environment variable.\n    at loadApiKey (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/@ai-sdk+provider-utils@4.0.15_zod@4.1.11/node_modules/@ai-sdk/provider-utils/dist/index.mjs:630:11)\n    at Object.getHeaders [as headers] (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/@ai-sdk+groq@3.0.24_zod@4.1.11/node_modules/@ai-sdk/groq/dist/index.mjs:992:32)\n    at GroqChatLanguageModel.doGenerate (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/@ai-sdk+groq@3.0.24_zod@4.1.11/node_modules/@ai-sdk/groq/dist/index.mjs:468:43)\n    at async fn (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:4095:36)\n    at async file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:2227:24\n    at async _retryWithExponentialBackoff (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:2486:12)\n    at async fn (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:4049:36)\n    at async file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:2227:24\n    at async generateText (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.pnpm/ai@6.0.82_zod@4.1.11/node_modules/ai/dist/index.mjs:3917:12)\n    at async generateReview (file:///Users/ali/OSS/workflow-playground/pr-ai-review-agent/node_modules/.nitro/workflow/steps.mjs:54:20)"
+  },
+  "runId": "wrun_01KH9VZ4JEMF429SENR6DM9TTW",
+  "eventId": "evnt_01KH9VZ812TZ3DHHRZ12AZ36HD",
+  "createdAt": "2026-02-12T21:26:33.250Z"
+}
