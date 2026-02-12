@@ -1,6 +1,6 @@
-import { google } from "@ai-sdk/google";
-import { generateText } from "ai";
+import { createGroq } from "@ai-sdk/groq";
 import { Octokit } from "@octokit/rest";
+import { generateText } from "ai";
 
 export interface PRContext {
 	owner: string;
@@ -18,26 +18,40 @@ export async function prReviewWorkflow(ctx: PRContext) {
 	return { review };
 }
 
+const IGNORED_FILES = /\.(lock|snap|min\.js|min\.css|map)$|^(pnpm-lock\.yaml|package-lock\.json|yarn\.lock|.*\.generated\.)/;
+const MAX_DIFF_CHARS = 20_000;
+
 async function fetchPRDiff(ctx: PRContext) {
 	"use step";
 
 	const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
-	const { data } = await octokit.pulls.get({
+	const { data: files } = await octokit.pulls.listFiles({
 		owner: ctx.owner,
 		repo: ctx.repo,
 		pull_number: ctx.prNumber,
-		mediaType: { format: "diff" },
+		per_page: 100,
 	});
 
-	return data as unknown as string;
+	const relevantFiles = files.filter((f) => !IGNORED_FILES.test(f.filename));
+
+	let diff = relevantFiles
+		.map((f) => `diff --git a/${f.filename} b/${f.filename}\n${f.patch ?? ""}`)
+		.join("\n");
+
+	if (diff.length > MAX_DIFF_CHARS) {
+		diff = diff.slice(0, MAX_DIFF_CHARS) + "\n\n[diff truncated]";
+	}
+
+	return diff;
 }
 
 async function generateReview(diff: string) {
 	"use step";
 
+	const groq = createGroq({ apiKey: process.env.GROQ_API_KEY });
 	const { text } = await generateText({
-		model: google("gemini-2.0-flash"),
+		model: groq("llama-3.3-70b-versatile"),
 		system: `You are an expert code reviewer. Analyze the provided PR diff and give a concise, actionable review.
 Focus on:
 - Bugs or logic errors
