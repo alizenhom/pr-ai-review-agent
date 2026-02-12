@@ -1,0 +1,19 @@
+{
+  "eventType": "run_created",
+  "specVersion": 2,
+  "eventData": {
+    "deploymentId": "dpl_local@4.1.0-beta.31",
+    "workflowName": "workflow//./src/worfklows/hello//helloWorkflow",
+    "input": {
+      "__type": "Uint8Array",
+      "data": "ZGV2bFtbMV0sImhlbGxvQGV4YW1wbGUuY29tIl0="
+    },
+    "executionContext": {
+      "traceCarrier": {},
+      "workflowCoreVersion": "4.1.0-beta.55"
+    }
+  },
+  "runId": "wrun_01KH91V93TKX1CF9CRX2EN5XNK",
+  "eventId": "evnt_01KH91V93X3NS290XQZMJM3TY1",
+  "createdAt": "2026-02-12T13:50:00.317Z"
+}
