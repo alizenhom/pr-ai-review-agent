@@ -18,7 +18,8 @@ export async function prReviewWorkflow(ctx: PRContext) {
 	return { review };
 }
 
-const IGNORED_FILES = /\.(lock|snap|min\.js|min\.css|map)$|^(pnpm-lock\.yaml|package-lock\.json|yarn\.lock|.*\.generated\.)/;
+const IGNORED_FILES =
+	/\.(lock|snap|min\.js|min\.css|map)$|^(pnpm-lock\.yaml|package-lock\.json|yarn\.lock|.*\.generated\.)/;
 const MAX_DIFF_CHARS = 20_000;
 
 async function fetchPRDiff(ctx: PRContext) {
