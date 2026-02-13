@@ -2,7 +2,7 @@ import type { PullRequestEvent } from "@octokit/webhooks-types";
 
 import { Hono } from "hono";
 import { start } from "workflow/api";
-import { prReviewWorkflow } from "./worfklows/pr-review";
+import { prReviewWorkflow } from "./worfklows/pr-review.js";
 
 const app = new Hono();
 
