@@ -1,4 +1,4 @@
-import type { PullRequestEvent, PushEvent } from "@octokit/webhooks-types";
+import type { PullRequestEvent } from "@octokit/webhooks-types";
 
 import { Hono } from "hono";
 import { start } from "workflow/api";
@@ -7,7 +7,7 @@ import { prReviewWorkflow } from "./worfklows/pr-review";
 const app = new Hono();
 
 app.get("/", (c) => {
-	return c.text("PR Review Agent is running.");
+	return c.json({ message: "PR Review Agent is running." });
 });
 
 app.post("/webhook", async (c) => {
